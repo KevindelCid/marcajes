@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Marcajes</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
             }
 
             .full-height {
-                height: 100vh;
+                height: 20vh;
             }
 
             .flex-center {
@@ -37,15 +37,18 @@
             .top-right {
                 position: absolute;
                 right: 10px;
-                top: 18px;
+                top: 3px;
             }
 
             .content {
                 text-align: center;
             }
-
+          
+            .sd {
+               margin-top: 40px !important;
+            }
             .title {
-                font-size: 84px;
+                font-size: 44px;
             }
 
             .links > a {
@@ -81,7 +84,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                   Marcajes
+
                 </div>
 
                 <div class="links">
@@ -94,7 +98,22 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+             
+
             </div>
+           
+          
         </div>
+
+
+        <div class="content sd">
+            <div class="title sd ">
+                <img src="{{ asset('img/default.jpg')}}"  width="300" alt=""><br>
+                <small >aqui cargaremos la imagen correspondiente ya sea a la persona o a la confirmacion del marcaje</small>
+            </div>
+            <label for="cod">Escanee su huella digital o ingrese su código para marcar</label><br>
+            <input id="cod" name="cod" type="text">
+            </div>
+
     </body>
 </html>
